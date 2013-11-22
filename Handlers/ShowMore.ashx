@@ -230,8 +230,10 @@ namespace ClearCostWeb.Handlers
                         if (iData["SubCategory"] != null)
                         {
                             Int16 sub = -1;
-                            Int16.TryParse(iData["subCategory"], out sub);
-                            fpaMVP.SpecialtyID = sub;
+                            if (Int16.TryParse(iData["subCategory"], out sub))
+                            {
+                                fpaMVP.SpecialtyID = sub;
+                            }
                         }
                         fpaMVP.Lat = Convert.ToDouble(iData["latitude"]);
                         fpaMVP.Lon = Convert.ToDouble(iData["longitude"]);
