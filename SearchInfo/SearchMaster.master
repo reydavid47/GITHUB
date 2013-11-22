@@ -1,0 +1,182 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SearchMaster.master.cs" Inherits="ClearCostWeb.SearchInfo.SearchMaster" %>
+
+<%@ Register Src="~/Controls/PatientAddress.ascx" TagPrefix="cch" TagName="PatientAddress" %>
+<%@ Register Src="~/Controls/AccountMenu.ascx" TagPrefix="cch" TagName="AccountMenu" %>
+<%@ Register Src="~/Controls/SessionTimeout.ascx" TagPrefix="cch" TagName="SessionTimeout" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="-1" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <title>ClearCost Health</title>
+
+    <link rel="Shortcut Icon" href="../Images/favicon.ico" />
+    <link href="Styles/skin.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/old/style.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/jquery.ui.base.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/jquery.ui.theme.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/jquery.ui.tabs.css" rel="Stylesheet" type="text/css" />
+    <link href="../Styles/jquery.jscrollpane.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/SearchMaster.css" rel="Stylesheet" type="text/css" />
+
+    <script src="https://www.google.com/jsapi" type="text/javascript"></script>
+    <%--<script src="../Scripts/dropdown.js" type="text/javascript"></script>--%>
+    <%--<script src="../Scripts/jquery-1.5.1.js" type="text/javascript"></script>--%>    
+    <%--<script src="../Scripts/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery-ui.custom.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery.ui.core.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery.ui.widget.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery.ui.tabs.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery.ui.position.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery.ui.autocomplete.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery.mousewheel.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery.jscrollpane.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../Scripts/Production.js"></script>--%>
+
+    <script type="text/javascript">
+        /*** Google Analytics ***/
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-34081191-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+    <style type="text/css">
+        .btn
+        {
+            background: url("../Images/buttons/short.png") no-repeat scroll -10px -10px transparent !important;
+            border: 1px solid #BBBBBB;
+            border-radius: 3px;
+            box-shadow: 0 0 2px #CCCCCC;
+            line-height: 30px;
+            margin: 10px !important;
+            padding: 8px 20px 8px 30px !important;
+	        }		
+        .btn:hover
+        {
+	        background-position:-10px -71px !important;
+	        }
+        .completeIQ
+        {
+	        font-weight:bold;
+	        position:relative;
+	        top:-3px;
+	        }	
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <% if (((bool?)HttpContext.Current.Session["FromCallCenter"]).HasValue && ((bool?)HttpContext.Current.Session["FromCallCenter"]).Value == true)
+       { %>
+       <div style="display:inline-block;position:fixed;top:0;left:0;background-color:rgb(240,234,244);border-bottom-right-radius:6px;box-shadow:1px 1px 3px #000;color: #333;font-size:14px;line-height:1.6em;font-family:Arial, helvetica, Verdana, Sans-Serif;padding:5px;">
+            <asp:LinkButton runat="server" PostBackUrl="~/CallCenter/Default.aspx" Text="Return To CallCenter" />
+       </div>
+    <% } %>
+    <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true" >
+    </asp:ScriptManager>
+    <div id="main" class="Home">
+        <div id="topbar">
+            <div id="logo">
+                <a href="search.aspx">
+                    <img src="../Images/clearcosthealth_logo.gif" alt="ClearCost Health" /></a>
+            </div>
+            <div id="tag">
+                <asp:Image ID="internalLogo" runat="server" AlternateText="" Visible="false" style="max-height:70px;margin-top:auto;" />
+            </div>
+            
+        </div>
+        <div id="welcomebar">
+            <div id="welcome">
+                <h3>
+                    Welcome,
+                    <asp:Label ID="lblEmployeeName" runat="server" Text="" CssClass="h3Style"></asp:Label>
+                </h3>
+                <div id="restartSCIQWrapper" runat="server" visible="false" style="display:inline-block;">                
+                    <div class='overallDivider'>&nbsp;</div>
+                    <div class="completeIQ">
+                        <asp:LinkButton ID="restartSCIQURL" class="btn" runat="server" OnClick="AuditIQRestart">Complete IQ</asp:LinkButton>
+                    </div>                                
+                </div>
+            </div>
+            <cch:AccountMenu ID="amSearchMaster" runat="server" />
+            <%--<div class="clearboth">
+            </div>--%>
+        </div>
+        <cch:PatientAddress ID="paMaster" runat="server" />
+        <asp:ContentPlaceHolder ID="MainBody" runat="server">
+        </asp:ContentPlaceHolder>
+        <div class="clearboth"></div>
+    </div>
+    <div id="botbar">
+        <div style="float: left" id="demobotnav">
+            <asp:Literal ID="ltlAboutUs" runat="server" Text ="" />
+            <img src="../Images/nav_div.gif" alt="" width="1" height="17" border="0" />
+            <asp:Literal ID="ltlContactUs" runat="server" Text="" />
+            <img src="../Images/nav_div.gif" alt="" width="1" height="17" border="0" />
+            <asp:Literal ID="ltlFAQ" runat="server" Text="" />
+        </div>
+        <p class="copyright">
+            &copy; ClearCost Health. All Rights Reserved.
+        </p>
+        <div class="clearboth">
+        </div>
+    </div>
+    <cch:SessionTimeout runat="server" id="smTimeout" />
+    </form>
+</body>
+<%--<script src="<%=ResolveUrl("~/Scripts/cch_global.js") %>" type="text/javascript"></script>   --%>
+<%--<script src="<%=ResolveUrl("~/Scripts/cch_savingsChoiceUI.js") %>" type="text/javascript"></script>--%>
+<script type="text/javascript">
+    _cchGlobal.pageData["cchid"] = '<%= ClearCostWeb.ThisSession.CCHID %>';
+    _cchGlobal.pageData["eid"] = '<%= ClearCostWeb.ThisSession.EmployerID %>';
+    _cchGlobal.pageData["sid"] = '<%= Session.SessionID %>';
+    var sciqURL = "<%=getSCIQURL() %>";
+    $(document).ready(function () {
+
+    });
+    $('#welcome h3').css('float', 'left');
+    $('#welcome').append("<%=getOverAllScore() %>");
+    if (sciqURL != undefined && sciqURL.length > 0) {
+        function activeContinueSCIQ(iData) {
+            /*
+            iData Structure 
+            iData.buttonID
+            iData.gotoURL
+            */
+            $(iData.buttonID).on('click', function () {
+                auditSCIQ({
+                    method: 'restart',
+                    cchid: _cchGlobal.pageData.cchid,
+                    sid: _cchGlobal.pageData.sid,
+                    url: _cchGlobal.pageData.pageURL,
+                    callback: function () {
+                        //window.location.href = returnURL;
+                        window.location.href = '/savingsChoice/' + iData.gotoURL;
+                    }
+                });
+            });
+        };
+//        $('#restartSCIQWrapper').children().each(function () {
+//            $(this).appendTo('#welcome');
+        //        });
+        $("#restartSCIQWrapper").css("display", "inline-block");
+        activeContinueSCIQ({
+            buttonID: $('#restartSCIQURL'),
+            gotoURL: sciqURL
+        });
+    }
+</script>
+
+<head>
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="-1" />
+    <meta http-equiv="pragma" content="no-cache" />
+</head>
+</html>

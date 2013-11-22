@@ -1,0 +1,6 @@
+﻿#locationbar { height: 44px; background-color: #f0eaf4; border-radius: 6px; moz-border-radius: 6px; -webkit-border-radius: 6px; khtml-border-radius: 6px; padding: 10px; margin-top: 15px; margin-bottom: 15px; box-shadow: 1px 1px 3px #000; moz-box-shadow: 1px 1px 3px #000; -webkit-box-shadow: 1px 1px 3px #000; z-index: 20001; }
+#locationbar * { font-size: 14px; }
+#location { width: 525px; float: left; }
+.changelocation { cursor: pointer; }
+#insurer { float: right; width: 325px; }
+#insurer:after { clear: both; }

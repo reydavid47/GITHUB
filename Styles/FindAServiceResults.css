@@ -1,0 +1,61 @@
+﻿div#pnlServices 
+{
+    max-height:500px;
+    min-height:100px;
+    overflow-y:auto;
+    float:left;
+    width:824px;
+}
+img.loadingSpinner
+{
+    height:40px;
+    width:40px;
+    padding:5px;
+    border:1px solid gray;
+    position:absolute;  
+    background-color:White;
+    border-radius:5px;
+    margin-top:20px;
+    box-shadow:1px 1px 3px rgb(0,0,0);
+    z-index:1040;
+    left:386px;
+}
+table#SearchResultsTbl
+{
+    width:807px;
+    max-height: 500px;
+    overflow-y:auto;
+}
+.sortAsc
+{
+    background-image: url("https://www.clearcosthealth.com/Images/icon_arrow_down.gif");
+    background-repeat: no-repeat;
+    padding-left: 10px;
+}
+.sortDesc
+{
+    background-image: url("https://www.clearcosthealth.com/Images/icon_arrow_up.gif");
+    background-repeat: no-repeat;
+    padding-left: 10px;
+}
+#fsPreferred 
+{
+    padding: 2px;
+    margin-left: -3px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    width: 824px;
+    margin-bottom: 10px;
+    padding-top: 0px;
+}
+#fsPreferred legend 
+{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 35px;
+}
+#fsPreferred #dPreferredProviders 
+{
+    max-height: 165px;
+    overflow-y: scroll;
+}

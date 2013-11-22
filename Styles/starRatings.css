@@ -1,0 +1,90 @@
+﻿/* created for stand-alone usage NOTE: css also incorporated into savingschoice.css for iq usage */
+/* --- star ratings css : START	--- */
+.starWrapper{position:relative; float:left; overflow:hidden;}
+.starWrapper ul
+{
+    background: url("../Images/starrating_empty.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 40px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    width: 212px;
+    z-index:10;
+    position:relative;
+	}
+.starWrapper ul li
+{
+	border: medium none;
+    display: inline-block;
+    height: 38px;
+    margin: 0;
+    padding: 0;
+    width: 39px;
+    z-index:10;
+    position:relative;
+	}	
+
+.starWrapper ul li:hover
+{
+	cursor:pointer;
+	}	
+
+.starWrapper .starHover, .starWrapper .starSelected
+{	
+	position:absolute;
+	left:212px;
+	z-index:1;
+	}	
+.starWrapper .starHover, .starWrapper .starSelected
+{
+    float: left;
+    height: 40px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    width: 212px;	
+	}	
+.starWrapper .starHover
+{
+	background: url("../Images/starrating_hover.png") no-repeat scroll 0 0 transparent;
+	}	
+.starWrapper .starSelected
+{
+	background: url("../Images/starrating_filled.png") no-repeat scroll 0 0 transparent;
+	}		
+.starWrapper .starsText
+{
+    clear: both;
+    font-family: times new roman;
+    font-size: 0.9em;
+    font-style: italic;
+    text-align: center;
+	}	
+.starWrapper.noStarRating
+{
+	border:2px solid red;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	}		
+
+/* -- mini star : begin -- */	
+.miniStar .starWrapper ul, .miniStar .starWrapper .starHover, .miniStar .starWrapper .starSelected
+{
+	background-size:70% !important;
+	}	
+.miniStar .starWrapper ul li
+{
+	float:left;
+	width:30px;	
+}	
+.miniStar .starsText
+{
+	width:70%;
+	position:relative;
+	top:-5px;
+}
+/* -- mini star : end -- */		
+	
+/* --- star ratings css	: END --- */	

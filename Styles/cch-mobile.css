@@ -1,0 +1,549 @@
+/* @media only screen and (min-device-width: 319px) and (max-device-width: 760px) { */
+  /* for mobile devices  */
+  
+@font-face {
+  font-family: 'Helcon';
+  src: url('../font/helveticaneueltstd-ltcn-webfont.eot'); /* IE 5-8 */ 
+  src: local('☺'),             /* sneakily trick IE */
+        url('../font/helveticaneueltstd-ltcn-webfont.woff') format('woff'),    /* FF 3.6, Chrome 5, IE9 */
+        url('../font/helveticaneueltstd-ltcn-webfont.ttf') format('truetype'), /* Opera, Safari */
+        url('../font/helveticaneueltstd-ltcn-webfont.svg#font') format('svg'); /* iOS */
+  font-weight:normal;
+  font-style:normal;
+  }
+        
+@font-face {
+  font-family: HelconBold;
+  src: url('../font/helvcb-webfont.eot'); /* IE 5-8 */ 
+  src: 
+			 local('☺'),             /* sneakily trick IE */
+        url('../font/helvcb-webfont.woff') format('woff'),    /* FF 3.6, Chrome 5, IE9 */
+        url('../font/helvcb-webfont.ttf') format('truetype'), /* Opera, Safari */
+        url('../font/helvcb-webfont.svg') format('svg'); /* iOS */
+  font-weight:normal;
+  font-style:normal;
+ 	letter-spacing:0px;
+ 	}
+ 	
+body {
+	background: #e1e1e1;
+	background-image: url('../Images/bg/noise.jpg');
+	background-repeat: repeat;
+	background-size: 100px 100px;
+	font-family: Helcon, "Droid Sans Condensed", Arial;
+	margin: 0px;
+	padding: 0px;
+	color: #404040;
+	font-size: 16px;
+	line-height: 1.3em;
+	position: relative;
+	width: 100%;
+	overflow-x: hidden;
+	text-align: center;
+	text-shadow: 1px 1px 2px #fff;
+}
+
+
+a {
+	color: #6eb43f;
+	text-decoration: none;
+	-webkit-tap-highlight-color: rgba(225,239,218,100);
+}
+
+input {
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	border: 1px solid #999;
+	margin: .3em 0em;
+	padding: 0em 10px;
+	font-family: Helcon, "Droid Sans Condensed", Arial;
+	font-size: 100%;
+	width: 100%;
+	height: 26px;
+	background-color: #fff;
+}
+
+input:hover,
+input:active {
+	background-color: #e1efda;
+	color: #333;
+}
+
+label {
+	text-transform: uppercase;
+	font-size: 80%;
+	margin: 1em 0em;
+}
+
+select {
+	font-family: Helcon, "Droid Sans Condensed", Arial;
+	background:none;
+	background-image: url('../Images/buttons/dropdown.png');
+	background-size: 300px 13px;
+	background-position: 100% 100%;
+	background-repeat: no-repeat;
+	border: none;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	margin: 0px;
+	padding: 0em 10px;
+	width: 276px;
+	height: 131px;
+	z-index: 100;/*
+	font-size: 100%;*/
+}
+
+option{
+	display: block;
+	width: 100px;
+	overflow: hidden;
+	margin-right: 0px;
+	padding-left: 20px;
+	z-index: 1000;
+}
+#main {
+	margin: 45px auto 0px;
+	padding-top: 20px;
+	width: 99%;
+	overflow-x: hidden; 
+	font-family: HelconBold, "Droid Sans Condensed", Arial;
+}
+
+#logo {
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	top: 0px; left: 0px;
+	background: #eee;
+	background-image: url('../Images/bg/topHeader.png');
+	background-position: 0px 0px;
+	background-size: 5px 60px;
+	padding: 0px;
+	text-align: center;
+	z-index: 3000;
+}
+
+#logo img {
+	padding-top: 12px;
+	width: 234px;
+	height: auto;
+}
+
+#imgLogo {
+	display: none;
+}
+
+#cmid {
+	width: 85%;
+	margin: 0px auto;
+	padding: 0px;
+	text-align: center;
+}
+
+#ctop {
+}
+
+#loginregister {
+	display: none; /* Already have an account? Sign In */
+}
+
+.button-signin a,
+a#lbtnContinue,
+a#cuwReview___CustomNav0_StepNextButtonLinkButton {
+	display: block;
+	margin: 5px auto;
+	width: 266px;
+	height: 34px;
+	background-image: url('../Images/buttons/signin.png');
+	background-repeat: no-repeat;
+	background-size: 250px 40px;
+	background-position: 50% 0px;
+	color: #fff;
+	font-family: HelconBold, "Droid Sans Condensed", Arial;
+	font-size: 110%;
+	padding-top: 8px;
+	padding-bottom: 10px;
+	border-bottom: 1px dashed #999;
+	text-shadow: 1px 1px 2px #666;
+}
+
+.button-gray-white-arrow-lg {
+	position: relative;
+	height: auto;
+	margin-bottom: 45px;
+}
+
+a#lbtnContinue {
+	background-image: url('../Images/buttons/continue.png');
+	margin-top: -60px;
+	margin-bottom: 0px;
+	border-bottom: none;
+}
+
+a#cuwReview___CustomNav0_StepNextButtonLinkButton {
+	background-image: url('../Images/buttons/continue.png');
+	text-align: center;
+	border-bottom: none;
+	margin-top: 0px;
+	position: relative;
+	top: -30px;
+}
+
+#pnlReg {
+	width: 100%;
+	margin: 0px;
+}
+
+#pnlReg img {
+	display: none;
+}
+
+#landingform {
+	text-align: left;
+	padding: 0em;
+	font-family: HelconBold, "Droid Sans Condensed", Arial;
+}
+
+#landingform p {
+	font-family: Helcon;
+}
+
+input#txtMonth,
+input#txtDay,
+input#txtYear {
+	width: 40px;
+	padding-left: 5px;
+}
+
+#pnlAdditionalID b {
+	font-family: HelconBold, "Droid Sans Condensed", Arial;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 80%;
+}
+
+/*** FOOTER ***/
+
+#botbar {
+	width: 100%;
+	height: 40px;
+	position: absolute;
+	bottom: -60px; left: 0px;
+	margin: 0px;
+	background: #7fc153;
+	background-image: url('../Images/bg/footer.png');
+	background-size: 5px 45px;
+	background-repeat: repeat-x;
+	color: #fff;
+	padding-top: 5px;
+}
+
+#botbar a {
+	color: #fff;
+}
+
+#botbar #demobotnav {
+	display: none;
+}
+
+#botbar p.copyright {
+	font-size: 80%;
+	padding: 0px;
+	clear: both;
+	text-shadow: 1px 1px 2px #404040;
+	position: relative;
+	top: -5px;
+}
+
+#botbar .clearboth,
+.clearboth block {
+	display: none;
+}
+
+/*** PAGE 2 ***/
+
+#upReview img {
+	display: none;
+}
+
+#upReview {
+	width: 100%;
+	margin: 20px 0px 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+#upReview #cuwReview {
+	font-family: Helcon;
+	width: 100%;
+	margin: 0 auto;
+	text-align: left;
+}
+
+#upReview table#cuwReview table {
+	width: 100%;
+}
+
+#upReview table#cuwReview table td {
+	width: 100%;
+}
+
+#upReview #cuwReview td{
+	width: inherit;
+}
+
+#upReview #cuwReview h2 {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	line-height: 1.3em;
+	font-size: 80%;
+	font-family: Helcon, "Droid Sans Condensed", Arial;
+	font-style: italic;
+	text-align: left;
+}
+
+#upReview #cuwReview h3 {
+	margin-bottom: 1em;
+}
+
+#upReview label {
+	display: block;
+	margin: 1em 0 0em;
+}
+
+#upReview .note {
+	display: block;
+	margin-bottom: 2em;
+}
+
+#upReview table,
+#upReview table tr,
+#upReview table td{
+	display: block;
+	position: static;
+}
+
+#upReview tr,
+#upReview td {
+	padding-top: 2px;
+	width: 90%;
+}
+
+#upReview td input {
+	width: 50%;
+}
+
+#upReview .formtable {
+	width: 88%;
+	margin: 0px;
+	padding: 0px;
+}
+
+#upReview h3 {
+	width: 85%;	
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+	font-family: Helcon, "Droid Sans Condensed", Arial;
+}
+
+table.formtable td {
+	width: 100%;
+	text-align: center;
+	padding: 0px;
+}
+
+table.formtable td label {
+	text-align: left;
+	width: 100%;
+	display: block;
+	margin: 10px 0px 0px;
+	padding: 0px;
+}
+
+#cuwReview table.formtable td input {
+	width: 99%;
+	margin: 0px;
+}
+
+#cuwReview span {
+	font-style: italic;
+	display: block;
+	width: 100%;
+	text-align: left;
+	font-size: 80%;
+}
+
+.registration-submit {
+	margin-bottom: 40px;
+}
+
+select #cuwReview_CreateUserStepContainer_ddlQuestion option {
+	border: 1px solid red;
+	width: 100px;
+}
+
+/*** NOTIFICATION SETTINGS ***/
+#cuwReview_CreateUserStepContainer_pnlNotificationSettings {
+	display: none;
+}
+
+hr {
+	display: none;
+}
+
+/*** TERMS OF USE ***/
+
+h3.terms,
+#cuwReview_CreateUserStepContainer_pnlTCVisible {
+	display: none;
+}
+
+#terms {
+	margin: 80px auto;
+	width: 85%;
+	text-align: left;
+	line-height: 1.4em;
+}
+
+#terms h3 {
+	text-align: center;
+	margin: 0px 0px .5em;
+	line-height: 1.2em;
+	font-family: HelconBold, sans-serif;
+}
+
+#terms p {
+	margin-top: 0em;
+}
+
+#terms ol li {
+	margin-top: .8em;
+}
+
+#terms ol li p {
+	margin-top: .8em;
+}
+
+#terms b {
+	display: block;
+	font-family: HelconBold, sans-serif;
+}
+
+p.pullquote {
+	width: 80%;
+	margin: 2em auto;
+	border-top: 2px dotted #ccc;
+	border-bottom: 2px dotted #ccc;
+	padding: .5em 0em;
+}
+
+a.agree {
+	display: block;
+	width: 266px;
+	height: 34px;
+	background-image: url('../Images/buttons/continue.png');
+	background-repeat: no-repeat;
+	background-size: 250px 40px;
+	background-position: 50% 0px;
+	color: #fff;
+	font-family: HelconBold, "Droid Sans Condensed", Arial;
+	font-size: 110%;
+	padding-top: 13px;
+	padding-bottom: 9px;
+	text-shadow: 1px 1px 2px #666;
+	margin: -2px auto;
+}
+
+#footer {
+	width: 100%;
+	height: 45px;
+	position: fixed;
+	bottom: 0px; left: 0px;
+	background: #fff;
+	background-image: url('../Images/bg/footer.png');
+	background-size: 5px 71px;
+	background-position: 0% 0%;
+	color: #fff;
+	padding-top: 11px;
+	line-height: .7em;
+}
+
+
+}
+
+
+@media only screen and (min-device-width: 719px) and (max-device-width: 720px) and (orientation:portrait){ 
+  /* for high-density Android phones */  
+  
+  
+
+
+
+
+}
+
+
+@media only screen and (orientation:landscape){ 
+  /* landscape */
+
+.button-signin a {
+	width: 85%;
+}
+
+select {
+	width: 500px;
+	background-position: 0px 100%;
+}
+
+option{
+	display: block;
+	width: 100px;
+	overflow: hidden;
+	margin-right: 0px;
+	padding-left: 20px;
+	z-index: 1000;
+}
+
+
+  }
+  
+  
+@media only screen and (min-device-width: 319px) and (max-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) { 
+  /* for iPhones */  
+ select {
+	font-family: Helcon, "Droid Sans Condensed", Arial;
+	font-size: 75%;
+	margin: 0px;
+	padding: 0em 10px;
+	width: 276px;
+	height: 31px;
+	background-image: url('../Images/buttons/dropdown-ios.png');
+	background-size: 265px 31px;
+	background-position: 0px 100%;
+	background-repeat: no-repeat;
+	border: none;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	z-index: 100;
+}
+
+option{
+	display: block;
+	width: 100px;
+	overflow: hidden;
+	margin-right: 0px;
+	padding-left: 20px;
+	z-index: 1000;
+}
+
+input {
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	width: 91%;
+}
+
+
+ 
+  

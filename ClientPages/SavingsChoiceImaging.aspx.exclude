@@ -1,0 +1,138 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ClientPages/SavingsChoice.master" AutoEventWireup="true" CodeFile="SavingsChoiceImaging.aspx.cs" Inherits="ClearCostWeb.ClientPages.SavingsChoiceImaging" %>
+
+<asp:Content ID="cHead" ContentPlaceHolderID="head" Runat="Server">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <link href="../Styles/overlay.css" rel="Stylesheet" />    
+    <link href="../Styles/cch_gloabl.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        #addProviderDialog p
+        {
+        	margin:5px auto;
+        	}
+    </style>
+</asp:Content>
+
+<asp:Content ID="cBody" ContentPlaceHolderID="body" Runat="Server">
+    <h3>Getting to Know You: Radiology Facilities</h3>
+    <p><asp:Literal ID="ratingText" runat="server"></asp:Literal></p>
+    <asp:Repeater ID="rptSatisfaction" runat="server">
+        <HeaderTemplate>
+            <div class="satisfaction">
+                <h2 class="avatar">Patient</h2>
+                <h2 class="provider">Imaging Facility</h2>
+                <h2 class="slider">Overall Satisfaction</h2>
+            </div>
+        </HeaderTemplate>
+        <ItemTemplate>
+            <div class="satisfaction row">
+                <div class="avatar">
+                    <%# ReadyDataForItem(Container) %>
+                </div>
+                <div class="provider">
+                    <b><%# LabName %></b>
+                    <br />
+                    <%# Address1 %>
+                    <br />
+                    <%# Address2 != string.Empty ? Address2 + "<br />" : "" %>
+                    <%# String.Concat(City, ", ", State, " ", Zipcode) %>
+                </div>
+                <div class="slider">
+                    <div class="medication_slider <%# sliderClass %>">
+                    </div>
+                    <div id="<%# sliderClass %>" pid='<%# LabID %>'>
+                        
+                    </div>
+                </div>
+                <div class="sliderInput">
+                    <asp:TextBox ID="txtSliderInput" runat="server" Enabled="false" style="text-align: center;" />
+                </div>
+                <div class='sliderInput <%# sliderClass %>' style="color:White;background-color:Green;height: 25px;text-align: center;padding: 1px;margin-top: 15px;display:none;">
+                    Thanks!
+                </div>
+            </div>
+        </ItemTemplate>
+        <FooterTemplate>
+            <script type="text/javascript" language="javascript">
+                function sendSliderData(e, u) {
+                    var staticData = { cchid: '<%= PrimaryCCHID %>', employerid: '<%= EmployerID %>', category: 'Imaging', review: '' };
+                    staticData.score = u.value;
+                    staticData.providerid = e.target.attributes["pid"].value;
+                    
+                    $.ajax({
+                        url: '<%= ResolveUrl("~/Handlers/SCRatings.ashx") %>',
+                        data: staticData,
+                        statusCode: {
+                            200: function() { $(".sliderInput." + e.target.attributes.id.value).show().fadeOut(500); },
+                            302: function() { }
+                        }
+                    });
+                }
+//                $("div[id^='slider']").slider({
+//                    orientation: "horizontal",
+//                    range: "min",
+//                    max: 10, 
+//                    value: -1,
+//                    slide: refreshSwatch,
+//                    change: refreshSwatch,
+//                    start: changeSliderHandlers,
+//                    stop: sendSliderData
+//                });
+                <%# valuescript %>
+            </script>
+        </FooterTemplate>
+    </asp:Repeater>
+    <div class="addProvider">
+        <a href="#" 
+            class="cch_showdialog" 
+            cch_dialogtemplate="addProviderDialog"
+            cch_click="addProvider()"
+            cch_prerender="prepDisplayData()">
+	            <img width="20" height="20" class="expand" alt="expand" src="../images/buttons/expand.png">
+	            Add Imaging
+        </a>    
+    </div>
+    <div id="addProviderDialog" title="Add Imaging" class="cch_hidden">
+        <div id="stateWrapper" style="opacity:0">
+            <p>Please select the State </p>
+            <select id="states"></select>
+        </div>
+        <div id="cityWrapper" style="display:none; opacity:0;">
+            <p>Please select the City</p>
+            <select id="cities"></select>
+        </div>
+        <div id="providerWrapper" style="display:none; opacity:0">
+            <p>Please select Imaging Provider </p>
+            <select id="providers"></select>
+        </div>
+        <div id="providerRating" style="display:none" opacity:0">
+            <p>How satisfied/unsatisfied were you?</p>
+            <div class="cch_ui" 
+                cch_type="slider" 
+                cch_defaultvalue="-1" 
+                cch_ajaxdata="cchid:<%# PrimaryCCHID %>,category:imaging,employerid:<%# EmployerID %>,providerid:<%# LabID %>" >
+            </div>        
+            <p>Would you like to leave a comment?</p>
+            <textarea id="newComment"></textarea>
+        </div>
+    </div>
+    <div class="next">
+        <%--<asp:LinkButton runat="server" OnClientClick="ValidateRatings();"--%>
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/ClientPages/SavingsChoiceWelcome.aspx" Text="Continue" />
+    </div>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js" type="text/javascript" language="javascript"></script>
+    <script src="../Scripts/cch_global.js" type="text/javascript"></script>        
+    <script src="../Scripts/cch_savingsChoiceUI.js" type="text/javascript"></script>   
+    <script type="text/javascript" language="javascript">
+        /*cch_ui - page*/
+        _cchGlobal.pageData["cchid"] = '<%= PrimaryCCHID %>';
+        _cchGlobal.pageData["eid"] = '<%= EmployerID %>';
+        _cchGlobal.pageData["newProviderCategory"] = 'imaging';
+        $(document).ready(function () {
+            _cchGlobal.actions.buildUI({ uiType: 'slider' });
+            _cchGlobal.actions.buildUI({ uiType: 'dialog' });
+            _cchGlobal.actions.loadPage();
+            _validate.sliders({ buttonID: 'body_HyperLink1', ratingSection: 'Imaging(s)' });
+        });   
+    </script>
+</asp:Content>
+

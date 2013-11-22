@@ -1,0 +1,83 @@
+#overlayBackground, #avatarOverlayBackground
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+#overlay, #avatarOverlay
+{
+    text-align: left;
+    position: fixed;
+    top: 30%;
+    left: 30%;
+    z-index: 3;
+}
+.avatarImage
+{
+    padding: 0px 8px;
+}
+.member
+{
+    /* width: 150px; */
+}
+.family
+{
+
+    /* width: 440px; */
+}
+.addFamilyMember
+{
+    clear: both;
+    padding-top: 10px;
+}
+#overlayTop, #avatarOverlayTop
+{
+    background-image: url('../Images/bg/overlay-top.png');
+	background-repeat: no-repeat;
+    background-size: 590px 23px;
+	width: 597px;
+	height: 14px;
+
+}
+#overlayTop img, #avatarOverlayTop img
+{
+    float: right;
+    margin-top: -20px;
+    margin-right: -10px;
+    cursor: pointer;
+}
+#overlayContent, #avatarOverlayContent
+{
+	background-image: url('../Images/bg/overlay-main.png');
+	background-repeat: repeat-y;
+  background-size: 590px 5px;
+	width: 597px;
+	height: auto;
+	padding: 10px 60px;
+	position: relative;
+
+} 
+#avatarOverlayContent { width: 525px; max-height: 300px; }
+
+#overlayContent .questionContent, #avatarOverlayContent .questionContent {
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+#overlayBottom, #avatarOverlayBottom
+{
+    background-image: url('../Images/bg/overlay-bottom.png');
+    background-repeat: no-repeat;
+    background-size: 590px 17px;
+	width: 597px;
+	height: 17px;
+}
+.questionContent
+{
+    width: 500px;
+    height: 300px;
+    overflow: scroll;
+}

@@ -1,0 +1,54 @@
+﻿/* -- normail detail table structure -- */
+.cch_SCtable thead tr th:first-child
+{
+	width:50%;
+	}
+#fairprice_providers .tablerow
+{
+    display:none;
+    }
+#fairprice_providers thead tr th	
+{
+    white-space:nowrap;
+    }        	
+#fairprice_providers td, #fairprice_providers th
+{
+    vertical-align:middle;
+    }	
+#fairprice_providers td:last-child label
+{
+    color:#999;
+    font-size:12px;
+    }	
+.cch_SCtable td:last-child, .cch_SCtable th:last-child
+{
+	width:150px;
+	}
+.cch_SCtable td, .cch_SCtable th
+{
+    vertical-align:middle;
+    }	
+        	
+.inactiveStar .starWrapper ul li:hover
+{
+	cursor:default;
+	}
+
+    
+/* -- normalize ratings and satisfaction structure -- */
+.userRatings
+{
+    width:130px;
+    position:relative;
+    top:7px;
+    }    
+.userRatings.inactiveStar div.starsText
+{
+	display:none;
+	}
+	
+/* -- default hide recent providers : only show if needed -- */	
+.cch_SCtable.recurring, h3.savingschoice.emphasis.center
+{
+	display:none;
+	}

@@ -1,0 +1,39 @@
+﻿.outerDiv 
+{  
+    border: solid 1px #000000;  
+    width: 211px;  
+    height: 60px;  
+    position: relative;  
+}  
+
+.starrating_filled
+{
+    position: absolute;
+    border: 0px;
+    width: 211px;
+    height: 37px;
+    z-index: 3;
+    top: 0px;
+    left: 0px;
+    display: block;
+}
+
+.starrating_hover
+{
+    position: absolute;
+    border: 0px;
+    width: 211px;
+    height: 37px;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    display: block;
+}
+
+.starrating_description
+{
+    position: absolute;
+    font-style: italic;
+    text-align: center;
+    vertical-align: bottom;
+}

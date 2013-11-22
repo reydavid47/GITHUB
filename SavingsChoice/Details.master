@@ -1,0 +1,22 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/SearchInfo/Results.master" AutoEventWireup="true" CodeFile="Details.master.cs" Inherits="ClearCostWeb.SavingsChoice.Details" %>
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ResultsContent" Runat="Server">    
+    <link href="<%=ResolveUrl("/Styles/cch_gloabl.css") %>" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="cphHeader" runat="server">
+             
+    </asp:ContentPlaceHolder>
+        
+    <asp:ContentPlaceHolder ID="cphSideBar" runat="server">
+
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="cphContentBar" runat="server">
+
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //$('#lblEmployeeName').append("<%=getOverAllScore() %>");            
+        });
+    </script>
+</asp:Content>
+

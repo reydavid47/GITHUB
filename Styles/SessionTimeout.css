@@ -1,0 +1,38 @@
+﻿.stWrapper  
+{
+    position: fixed;
+    bottom: 0px;
+    left: 30px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-style: none;
+    border-top-color: rgb(51, 51, 51);
+    border-right-color: rgb(51, 51, 51);
+    border-left-color: rgb(51, 51, 51);
+    height: 0px;
+    min-width: 200px;
+    max-width: 285px;
+    padding: 20px;
+    box-shadow: black 1px 1px 3px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background-color: rgb(240, 234, 244);
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.stCloseImg
+{
+    width:14px;
+    height:14px;
+    position:absolute;
+    right: 7px;
+    top: 7px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.textCenter { text-align: center; }
+.textLeft { text-align: left; }
+.stCountdown { color: Black; padding: 2px; margin-bottom: 15px; display: inline-block; }
+.stPreventLink { cursor: pointer; text-decoration: underline; }

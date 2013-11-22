@@ -1,0 +1,75 @@
+/*!
+ * jQuery UI Autocomplete 1.9.2
+ * http://jqueryui.com
+ *
+ * Copyright 2012 jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Autocomplete#theming
+ */
+.ui-autocomplete {
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: default;
+	/* BNC */
+	max-height: 265px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding-right: 20px;
+}
+
+/* workarounds */
+* html .ui-autocomplete { width:1px; height: 100px; } /* without this, the menu expands to 100% in IE6 */
+
+
+/*
+ * jQuery UI Menu 1.8.13
+ *
+ * Copyright 2010, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Menu#theming
+ */
+.ui-menu {
+	list-style:none;
+	padding: 2px;
+	margin: 0;
+	display:block;
+	float: left;
+	background-color: #fff; /*susan*/
+	width: 500px;/* Added by Blue Note - to avoid word wrap on longer service names. */
+	min-height: 50px; /* Added by Blue Note - Pre request by Chris on RX autocomplete */
+}
+.ui-menu .ui-menu {
+	margin-top: -3px;
+}
+.ui-menu .ui-menu-item {
+	margin:0;
+	padding: 0;
+	zoom: 1;
+	float: left;
+	clear: left;
+	width: 100%;
+}
+.ui-menu .ui-menu-item a {
+	text-decoration:none;
+	display:block;
+	padding:.2em .4em;
+	line-height:1.5;
+	zoom:1;
+}
+.ui-menu .ui-menu-item a.ui-state-hover,
+.ui-menu .ui-menu-item a.ui-state-active {
+	font-weight: normal;
+	margin: -1px;
+}
+.ui-autocomplete-loading 
+{
+    background-image: url("../Images/ajax-loader-AltCircle_SM.gif");
+    background-repeat: no-repeat;
+    background-position-x: 475px;
+    background-position-y: 3px;
+}

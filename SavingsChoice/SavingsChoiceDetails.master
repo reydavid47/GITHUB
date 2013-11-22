@@ -1,0 +1,7 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/SearchInfo/Results.master" AutoEventWireup="true" CodeFile="SavingsChoiceDetails.master.cs" Inherits="SearchInfo_SavingsChoiceDetails" %>
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ResultsContent" Runat="Server">
+
+</asp:Content>
+

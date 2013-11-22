@@ -1,0 +1,16 @@
+﻿#message
+{
+    position: absolute;
+    height: 25px;
+    width: 100px;
+    border: 1px gray solid;
+    background-color: #F0EAF4;
+    font-size: 1.4em;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 5px;
+    top: 5px;
+    right: 5px;
+    color: #6BAD44;
+    display: none;
+}

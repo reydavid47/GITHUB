@@ -1,0 +1,20 @@
+﻿.headline
+{
+    font-size: 42px;
+	color: #662D91;
+	font-weight: bold;
+	line-height: 1.2em;
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-bottom: 5px;
+	padding-bottom: 0px;   
+}
+.formtable td,
+div.shadowbox .formtable td {
+	font-size: 14px;
+	padding: 5px 5px;
+	vertical-align: top;
+}
+.formtable td.leftpadded {
+	padding-left: 30px;
+}

@@ -1,0 +1,1 @@
+﻿<%@ WebHandler Language="C#" Class="ClearCostWeb.Handlers.Results_Past_Care" CodeBehind="Handlers.cs" %>

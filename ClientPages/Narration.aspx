@@ -1,0 +1,19 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ClientPages/ClientPages.master" AutoEventWireup="true" CodeFile="Narration.aspx.cs" Inherits="ClearCostWeb.ClientPages.Narration" %>
+
+<asp:Content ID="NarrationContent" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+Welcome to ClearCost Health, a service that helps you be a smart shopper when it comes to your health care.  This overview will show you how easy it is to start saving money on your health care expenses by shopping for high quality, low cost services, providers and prescription drugs. 
+Once you log in, simply decide what you’re looking for.
+If it’s a specific service you need, such as allergy testing or a knee MRI, go to the “Find a Service” tab.  
+If you’re looking for a prescription drug, select “Find Rx.”  You will find useful, money-saving information whether you need a generic or brand name medication and whether your prescription will be dispensed at a retail pharmacy or via mail-order. 
+You can use the “Find a Doctor” tab to search for a doctor by medical specialty.  The “Find a Doctor” tab is especially useful if you don’t know exactly what services or prescription drugs you may need.  If patient reviews are valuable to you, the “Find a Doctor” tab also includes additional information on Patient Satisfaction ratings.
+As you use the service, search results will show you provider names, estimated costs and each provider’s distance from your address.  You can see the search results in a table format or, if you prefer, in a map view.  ClearCost Health will show you exactly how much that service will cost both in terms of the overall, total cost as well as an estimate of what will come out of your pocket after your benefit plan pays its share.
+In the Find a Service and Find a Doctor sections, we’ll show you which providers are considered to be Fair Price and which providers are Healthgrades Recognized.  Healthgrades is a nationally recognized aggregator of basic provider quality information.  ClearCost Health integrates this useful information directly into the service for your convenience.
+In each of the sections, you can learn more about the provider or facility by clicking on their name in the search results and seeing a detailed page with additional provider information. 
+As you perform your searches, focus on providers that have both green and purple check marks.  These are objective indicators of lower cost and higher quality.  Looking for both should give you greater confidence that both your health and wallet will be in good hands.
+Finally, if you’re not looking for anything in particular but just want to see if you’ve been a smart shopper over the past twelve months, go to the “Past Care” tab.  This section will show you where you’ve spent money in the past, where you’ve been a smart shopper, and – most importantly – where there are opportunities to save in the future.
+From time to time, you may receive a Savings Alert from ClearCost Health.  These Savings Alerts will identify significant savings opportunities in the future based on where you’ve spent your health care dollars in the recent past.  It will be your choice to act on this information or not; but ClearCost Health and your employer want this information to be available to you as easily, clearly and privately as possible.
+If speaking to a live person would help you become a smart shopper, you may call our support line to speak to a ClearCost Health Shopper. These trained staff will be able to answer your questions about the ClearCost Health service and give you tips on how to put this cost and quality information into action. 
+With ClearCost Health, you’ll be able to use the web to shop for health care just as you do in so many other parts of your life.  It’s simple, it’s free and better yet, it will help you save money!
+So what do you say?  Be a Smart Shopper with ClearCost Health.
+</asp:Content>
+

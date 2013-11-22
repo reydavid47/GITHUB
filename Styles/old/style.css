@@ -1,0 +1,1229 @@
+body {
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+}
+* {
+	font-family: arial, helvetica, verdana, sans-serif;
+	font-size: 14px;
+	line-height: 1.6em;
+	color: #333;
+}
+a, a:link, a:visited, a:active, a:hover {
+	text-decoration: none;
+	color: #662D91;
+}
+a img {
+	border: 0;
+}
+/*-- ADDED BY BLUENOTE. If a new version of this is sent to us, make sure to add this section in.
+ALSO - Search for BlueNote below - had to make some change, like hard coded image URL to Susan's site. --*/
+
+.h1Style 
+{	
+	font-size: 34px;
+	color: #6BAD44;
+	line-height: 1.1em;
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-bottom: 10px;
+	padding-bottom: 0px;
+}
+.h2Style {
+	font-size: 24px;
+	color: #662D91;
+	font-weight: 100;
+	line-height: 1.3em;
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-bottom: 5px;
+	padding-bottom: 0px;
+}
+.h2bgStyle {
+	font-size: 24px;
+	color: #662D91;
+	font-weight: 100;
+	line-height: 1.3em;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	background-color: #f0eaf4;
+	padding: 8px 12px;
+	margin-bottom: 10px;
+}
+.h3Style {
+	font-size: 14px;
+	color: #669933;
+	font-weight: bold;
+	text-transform: none;
+	line-height: 1.2em;
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-bottom: 5px;
+	padding-bottom: 0px;
+}
+.boxed {
+	border: 1px solid #ccc;
+	color: #333;
+	font-family: arial, helvetica, sans-serif;
+	width: 300px;
+	padding: 3px;
+}
+.send {
+	border: 1px solid #662D91;
+	background-color: #662D91;
+	color: #fff;
+	width: 100px;
+}
+
+.xclose {  /* the close [x] of the adv search boxes */
+	position: absolute;
+	top: 6px;
+	right: 10px;
+	background-image: url('../../../Images/icon_x.png');
+	width: 18px;
+	height: 18px;
+	background-repeat: no-repeat;
+	text-indent: 50px;
+	cursor: pointer;
+}
+
+div.directions {
+	position: relative;
+	display: inline;
+	cursor: pointer;
+}
+div.directions img {
+	z-index: 5;
+}
+div.directiondetails {
+	display: none;
+	border: 2px #ccc solid;
+	padding: 10px;
+	background-color: #fff;
+	text-align: left;
+	text-transform: none;
+	z-index: 1;
+}
+div.directiondetails * {
+	font-size: 11px;
+	font-weight: normal;
+}
+div.directiondetails b {
+	font-weight: bold;
+}
+
+div.alertbar {
+	background-color: #e1efda;
+	border-radius: 6px 6px 6px 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	background-image: url('../../../Images/dollar_sign.png');
+	background-repeat: no-repeat;
+	background-position: 10px 10px;
+	padding: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+div.alertbar * {
+	font-size: 14px;
+}
+
+div.alert {
+	width: 700px;
+	padding-left: 80px;
+}
+
+p.transfer {
+	background-image: url('../../../Images/transfer.gif');
+	background-repeat: no-repeat;
+	background-position: 3px 5px;
+	padding-left: 120px;
+}
+/*-- END: Added by Blue Note --*/
+
+h1, h1 * {
+	font-size: 34px;
+	color: #6BAD44;
+	line-height: 1.1em;
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-bottom: 10px;
+	padding-bottom: 0px;
+}
+h2, h2 a {
+	font-size: 24px;
+	color: #662D91;
+	font-weight: 100;
+	line-height: 1.3em;
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-bottom: 5px;
+	padding-bottom: 0px;
+}
+h2.bg {
+	background-color: #f0eaf4;
+	padding: 8px 12px;
+	margin-bottom: 10px;
+}
+div.h2bg {
+	font-size: 24px;
+	color: #662D91;
+	font-weight: 100;
+	line-height: 1.3em;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	background-color: #f0eaf4;
+	padding: 8px 12px;
+	margin-bottom: 10px;
+}
+
+
+h3 {
+	font-size: 14px;
+	color: #669933;
+	font-weight: bold;
+	text-transform: none;
+	line-height: 1.2em;
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-bottom: 5px;
+	padding-bottom: 0px;
+}
+
+.headline {
+	font-size: 42px;
+	color: #662D91;
+	font-weight: bold;
+	line-height: 1.2em;
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-bottom: 5px;
+	padding-bottom: 0px;
+}
+
+.header {
+	font-size: 11px;
+	color: #333;
+	font-weight: bold;
+	line-height: .5em;
+	text-transform: uppercase;
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-bottom: 5px;
+	padding-bottom: 0px;
+}
+
+h3.bg {
+	color: #fff;
+	background-color: #669933;
+	padding: 6px 12px;
+	text-transform: none;
+}
+.healthgrades {
+	background-image: url('../../../Images/healthgrades_logo.png');
+	background-repeat: no-repeat;
+	background-position: 535px 8px;
+}
+ul {
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+li {
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+.clearboth {
+	clear: both;
+}
+.displayinline {
+	display: inline;
+}
+.green {
+	color: #669933;
+}
+.floatleft {
+	float: left;
+}
+.floatright {
+	float: right;
+}
+table.searchresults td {
+	padding: 4px;
+}
+table.doctypes td, table#finddoc td {
+    text-align: left;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+table.doctypes td.graydiv, table.doctypes tr.graydiv, table.doctypes td.roweven, table.doctypes tr.roweven td.roweven, table#finddoc td.graydiv, table#finddoc tr.graydiv, table#finddoc tr.roweven td.graydiv, table#finddoc td.roweven
+{
+	border-style: none;
+    border-color: currentColor;
+    border-width: 0px;
+    background-color: white;
+}
+table.searchresults td.dashcol {
+	padding: 0;
+}
+table.searchresults td.alignright,
+table.searchquery td.alignright,
+.alignright {
+	text-align: right;
+}
+table.searchresults td.alignrightcenter {
+	text-align: right;
+	padding-right: 65px;
+}
+table.searchresults td.alignnearlyright {
+	text-align: right;
+	padding-right: 25px;
+}
+table.searchresults td.distancealignright {
+	text-align: right;
+	padding-right: 2em;
+}
+table.searchresults td.alignleft,
+table.searchquery td.alignleft,
+.alignleft {
+	text-align: left;
+}
+.upper {
+	text-transform: uppercase;
+}
+.smaller,
+.smaller * {
+	font-size: 12px;
+}
+.larger,
+.larger * {
+	font-size: 16px;
+}
+.center {
+	text-align: center;
+}
+hr {
+	clear: both;
+	border-top: 1px #d8d8d8 dotted;
+	border-bottom: 0;
+	border-left: 0;
+	border-right: 0;
+	color: #d8d8d8;
+	margin: 20px 0;
+	height: 1px;
+}
+hr.heavy {
+	border-top: 1px #999 dotted;
+	color: #999;
+	height: 1px;
+}
+.callout {
+	font-weight: bold;
+	color: #669933;
+}
+.callout:hover {
+	color: #669933;
+}
+.readmore {
+	background-image: url('../../../Images/sm_arrow_square.png');
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	padding-left: 17px;
+}
+.back {
+	background-image: url('../../../Images/sm_arrow_square_back.png');
+	background-repeat: no-repeat;
+	background-position: 3px 0px;
+	padding-left: 20px;
+}
+tr.roweven td {
+	background-color: #f0eaf4;
+}
+tr.rowodd td {
+	background-color: #e1efda;
+}
+/* Added by Blue Note */
+tr.rowbold td {
+	font-weight:bold;
+}
+/* End added by Blue Note */
+
+/*  ---  UNAV  ---  */
+div#demounav,
+div#demobotnav,
+div#unav {
+	text-align: right;
+	margin-top: 0px;
+}
+div#unav {
+	margin-bottom: 35px;
+}
+div#welcomebar img,
+div#unav img {
+	margin-bottom: -4px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+div#unav a, div#unav a:link, div#unav a:active, div#unav a:visited, div#unav a:hover,
+div#demobotnav a, div#demobotnav a:link, div#demobotnav a:active, div#demobotnav a:visited, div#demobotnav a:hover,
+div#demounav a, div#demounav a:link, div#demounav a:active, div#demounav a:visited, div#demounav a:hover {
+	font-size: 14px;
+	line-height: 29px;
+	font-weight: bold;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+div#unav a, div#unav a:link, div#unav a:visited,
+div#demobotnav a, div#demobotnav a:link, div#demobotnav a:visited,
+div#demounav a, div#demounav a:link, div#demounav a:visited {
+	color: #662D91;
+}
+div#unav a.unavon, div#unav a:active, div#unav a:hover,
+div#demobotnav a.unavon, div#demobotnav a:active, div#demobotnav a:hover,
+div#demounav a.unavon, div#demounav a:active, div#demounav a:hover {
+	color: #693;
+	background-image: url('../../Images/nav_arrow_on.gif');
+	background-repeat: no-repeat;
+	background-position: 6px 4px;
+}
+
+div#welcome {
+	float: left;
+	padding-top: 4px;
+	padding-left: 4px;
+}
+div#welcome h3 {
+	text-transform: none;
+	display: inline;
+	line-height: 1.6em;
+}
+div#demounav {
+	float: right;
+}
+div#locationbar,
+div.switchbar {
+	background-color: #f0eaf4;
+	border-radius: 6px 6px 6px 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	padding: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+div#locationbar * {
+	font-size: 14px;
+}
+a.changelocation {
+	cursor: pointer;
+}
+form#chgloc input, form#chgloc select {
+	margin: 5px;
+}
+
+div#location {
+	width: 525px;
+	float: left;
+}
+div#insurer {
+	float: right;
+	width: 325px;
+}
+div.locationform {
+	position: relative;
+	overflow: hidden;
+	display: none;
+}
+div.locationform a.xclose {
+	top: 26px;
+}
+
+div#alertbar,
+.alertsmall,
+.alertmini {
+	background-color: #e1efda;
+	border-radius: 6px 6px 6px 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	background-image: url('../../../Images/dollar_sign.png');
+	background-repeat: no-repeat;
+	background-position: 10px 10px;
+	padding: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+div#alertbar * {
+	font-size: 14px;
+}
+
+div#alert {
+	width: 700px;
+	padding-left: 80px;
+}
+.alertsmall,
+.alertmini {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+}
+.alertsmall {
+	padding-left: 42px;
+	background-image: url('../../../Images/dollar_sign_sm.png');
+	background-position: 5px 5px;
+}
+.alertmini {
+	background-image: none;
+}
+
+/*  ---  END UNAV  ---  */
+
+
+/*  ---  TOP BAR  ---  */
+div#tag {
+	float:right;
+	text-align: right;
+}
+div#tag img {
+	margin-top: 40px;
+}
+div#topbar {
+	padding-top: 35px;
+	padding-left: 0px;
+	padding-bottom: 30px;
+	padding-right: 0px;
+}
+div#logo {
+	float:left;
+}
+/*  --- TOP BAR ---  */
+
+
+/*  --- BOT BAR ---  */
+h4 {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #693;
+	padding: 0;
+	margin: 0;
+}
+div#botbar {
+	width: 840px;
+	margin: 0 auto;
+	clear: both;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+div#botbar div#botnav, div#botbar p {
+	color: #999;
+}
+div#botbar p, div#botbar a {
+	font-size: 12px;
+}
+p.copyright {
+	float: right;
+	font-size: 11px;
+	line-height: 30px;
+	margin: 0;
+	padding: 0;
+}
+div#botbar img.boticon {
+	margin-top: 15px;
+}
+/*  --- BOT BAR ---  */
+
+
+/* --- MAIN ---  */
+div#main {
+	width: 902px;
+	margin: 0 auto;
+}
+/* --- Moved to skin.css ---*/
+div#ctop {
+	width: 902px;
+	height: 25px;
+	background-image: url('../../Images/container_top.gif');
+	background-repeat: no-repeat;
+}
+/*div#cmid {
+	width: 902px;
+	background-image: url('/images/container_middle.gif');
+	background-repeat: repeat-y;
+}*/
+div#cbot
+{
+	width: 902px;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	margin-bottom: 40px;
+	background-image: url('../../Images/container_bottom.gif');
+}
+/*div#cbotdemo {
+	background-image: url('../../../Images/container_bottom_demo.gif');
+}*/
+/* --- END MAIN --- */
+
+
+*/
+/* --- END MAIN --- */
+
+
+/* --- HOME --- */
+div#colleft a img,
+div#colmid a img,
+div#colright a img {
+	margin-bottom: -5px;
+}
+div#colleft {
+	float: left;
+	width: 250px;
+	padding-right: 25px;
+	margin-left: 25px;
+}
+div#colmid {
+	float: left;
+	width: 250px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 40px;
+	margin-right: 25px;
+	border-left: 1px #ccc dotted;
+	border-right: 1px #ccc dotted;
+}
+div#colright {
+	float: left;
+	width: 260px;
+}
+/* --- END HOME --- */
+
+
+/* --- INTERNAL --- */
+div.intwide {
+	margin-left: 35px;
+	width: 840px;
+	padding-bottom: 50px;
+	position: relative; /* so that we can abs position the buttons */
+}
+div.intcontent {
+	width: 400px;
+	float: left;
+}
+div.intzone {
+	width: 424px;
+	float: right;
+}
+table.transparencygrid {
+	border: 1px #999 solid;
+}
+table.transparencygrid th {
+	background-color: #6bad44;
+	color: #fff;
+	font-weight: bold;
+	line-height: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+table.transparencygrid td {
+	vertical-align: top;
+	text-align: center;
+	line-height: 1.5em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+table.transparencygrid tr.odd td {
+	background-color: #fff;
+}
+table.transparencygrid tr.even td {
+	background-color: #d2e6c7;
+}
+table.transparencygrid th.desc,
+table.transparencygrid td.desc {
+	text-align:left;
+	padding-left: 10px;
+	padding-right: 15px;
+}
+table.transparencygrid th.fig,
+table.transparencygrid td.fig {
+	text-align: right;
+	padding-right: 15px;
+}
+
+div.button,
+div.buttonview {
+	background-color: #f90;
+    border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	color: #FFFFFF;
+	display: inline-block;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 37px;
+	padding: 2px 14px;
+}
+div.button a, div.button a:link, div.button a:visited, div.button a:active {
+	font-size: 12px;
+	color: #FFFFFF;
+}
+div#result_buttons {
+	text-align: right;
+	position: absolute;
+	top: 7px;
+	right: 0;
+}
+.sortby {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+p.sorttools {
+	color: #999;
+}
+table.searchresults * {
+	font-size: 12px;
+}
+table.searchquery * {
+	font-size: 14px;
+}
+table.searchresults tr td .larger {
+	font-size: 14px;
+}
+table.searchresults th,
+table.searchresults th a,
+table.searchquery th,
+table.searchquery th a {
+	text-transform: uppercase;
+	font-size: 11px;
+}
+table.searchquery th,
+table.searchquery th a {
+	font-size: 12px;
+}
+th.tdfirst,
+td.tdfirst,
+table.searchresults th.tdfirst,
+table.searchresults td.tdfirst {
+	text-align: left;
+}
+table.nobr td {
+	white-space: nowrap;
+}
+div.learnmore {
+	position: relative;
+	display: inline;
+	cursor: pointer;
+}
+div.learnmore img {
+	z-index: 5;
+}
+div.moreinfo,
+div#savesearchform,
+div#meduser {
+	display: none;
+	border: 2px #ccc solid;
+	padding: 15px;
+	position: absolute;
+	width: 200px;
+	left: -95px;
+	top: 20px;
+	background-color: #fff;
+	text-align: left;
+	text-transform: none;
+	z-index: 200;
+	overflow: hidden;
+}
+div.moreinfo * {
+	font-size: 11px;
+	font-weight: normal;
+}
+div.moreinfo b {
+	font-weight: bold;
+}
+div#savesearchform {
+	width: 246px;
+	left: auto;
+	right: 0;
+	top: 20px;
+}
+div#meduser {
+	width: 246px;
+	left: auto;
+	right: 0;
+	top: 100px;
+}
+table.searchquery td,
+table.searchresults td {
+	text-align: center;
+	vertical-align: middle;
+}
+td,
+table.searchquery td,
+table#searchdetails td {
+	vertical-align: top;
+}
+table.searchquery th,
+table.searchquery td {
+	padding-left: 1.4em;
+	padding-right: 2em;
+}
+table.searchquery th {
+	padding-left: 1.7em;
+}
+table.docspecialty td {
+	height: 3.5em;
+	width: 33%;
+}
+th.whitediv,
+td.whitediv {
+	border-right: 1px white solid;
+}
+th.graydiv,
+td.graydiv {
+	border-right: 1px #ccc solid;
+}
+tr.graydiv td {
+	border-bottom: 1px #ccc solid;
+}
+tr.graydiv td:first-child {
+	border-left: 1px #ccc solid;
+}
+tr.graytop td {
+	border-top: 1px #ccc solid;
+}
+div#detailinfo {
+	width: 400px;
+	float: left;
+}
+div#detailmap {
+	float: right;
+}
+a#searchbydoctor,
+a#searchbyfacility,
+a#searchbycpt,
+a#closedoctor,
+a#closefacility,
+a#closecpt,
+.pointer {
+	cursor: pointer;
+}
+div#doctorsearch,
+div#facilitysearch,
+div#cptsearch {
+	position: relative;
+	display:none;
+	background-color: #f0eaf4;
+	border-radius: 6px 6px 6px 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	padding: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+a.xclose {  /* the close [x] of the adv search boxes */
+	position: absolute;
+	top: 6px;
+	right: 10px;
+	background-image: url('../../../Images/icon_x.png');
+	width: 18px;
+	height: 18px;
+	background-repeat: no-repeat;
+	text-indent: 50px;
+	cursor: pointer;
+}
+
+div#mrisearch,
+div#labsearch,
+div#officesearch {
+	display: none;
+	position: absolute;
+	left: 100px;
+	top: 100px;
+	z-index: 200;
+	padding: 5px 35px 15px 35px;
+	background-color: #f0eaf4;
+	border-radius: 6px 6px 6px 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	overflow: hidden;
+}
+div.whitescreen {
+	background-color: #fff;
+	width: 100%;
+	height: 1000px;
+	left: 0;
+	top: 0;
+	filter:alpha(opacity=50);
+	opacity: 0.5;
+	position: fixed;
+	z-index: 2;
+}
+
+/* for tableview and mapview in the Find Care results */
+div#mapview {
+	/* display: none; removed for class specific hiding and showing */
+	margin-top: 20px;
+}
+a#showtableview,
+a#showmapview {
+	cursor: pointer;
+}
+div.buttonview {
+	margin: 15px 0;
+	line-height: 35px;
+	padding: 1px 12px;
+	background-color: #EFEAF4; /* light */
+	border: 1px #EFEAF4 solid; /* light */
+}
+div.buttonview a, div.buttonview a:link, div.buttonview a:visited, div.buttonview a:active {
+	color: #946cb2; /* dark */
+}
+div.viewshows {
+	background-color: #fff;
+	border: 1px #ccc solid;
+}
+div.viewshows a.viewshows {
+	color: #662D91;
+}
+img.checkmark {
+	vertical-align: bottom;
+	padding-top: 1px;
+}
+div#legend {
+	position: absolute; 
+	width:650px; 
+	height: 50px; 
+	left: 450px; 
+	top: -55px;
+}
+.legendfp, .legendp, .legendpin {
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	line-height: 37px;
+	padding-left: 30px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+.legendpin {
+	background-image: url('../../../Images/icon_map_pin.png');
+	background-position: 0px 6px;
+}
+.legendp {
+	background-image: url('../../../Images/icon_map_blue.png');
+}
+.legendfp {
+	background-image: url('../../../Images/icon_map_green.png');
+}
+
+.membermed {
+	display: none;
+	padding-left: 22px;
+}
+.membermedvisible {
+	padding-left: 22px;
+}
+.managemember,
+#managemember1,
+#managemembtext-transform: uppercase;hidden {
+	display: none;
+}
+
+.hidden {display: none;} /* Added By Blue Note */
+
+table#tablepastcare tr.rowclosed td:first-child,
+table#tablepastcare tr.rowopen td:first-child {
+	background-repeat: no-repeat;
+	padding-left: 31px;
+	background-position: 6px 4px;
+}
+table#tablepastcare tr.rowclosed td:first-child {
+	background-image: url('../../../Images/icon_plus.png');
+}
+table#tablepastcare tr.rowopen td:first-child {
+	background-image: url('../../../Images/icon_minus.png');
+}
+table#tablepastcare th,
+table#tablepastcare tr.trfooter td {
+	background-color: #e1efda;
+	color: #333;
+	font-size: 16px;
+	font-weight: bold;
+	/*-- text-transform: uppercase; --*/  /*-- Commented out by Blue Note --*/
+	line-height: 1em;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+table#tablepastcare td {
+	vertical-align: top;
+	line-height: 1.2em;
+}
+table#tablepastcare tr.category td {
+	border-bottom: 2px white solid;
+}
+table#tablepastcare tr.subhead td {
+	text-transform: uppercase;
+	font-size: 11px;
+	color: #333;
+	font-weight: bold;
+	line-height: 1em;
+}
+table#tablepastcare td.costcol,
+table#tablepastcare tr.trfooter td.costcol {
+	text-align: right;
+	padding-right: 45px;
+}
+table#tablepastcare td.savecol,
+table#tablepastcare tr.trfooter td.savecol {
+	text-align: right;
+	padding-right: 60px;
+}
+tr.category {
+	cursor: pointer;
+	background-color: #669933;
+}
+tr.category td {
+	font-weight: bold;
+	color: #fff;
+}
+tr.careinstance {
+	display: none;
+}
+div#subselect1, div#subselect2 {
+	display: none; 
+}
+div#doctorsearch,
+div#faciltysearch,
+div#cptsearch {
+}
+table#detailtable {
+	width: 400px;
+}
+table#detailtable td {
+	vertical-align: top;
+}
+table#doctorfacilitytable tr.h3 td {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.2em;
+	color: #fff;
+	background-color: #669933;
+	padding: 6px 35px;
+	text-transform: none;
+	background-repeat: no-repeat;
+	background-position: 12px 5px;
+	border-bottom: 5px white solid;
+}
+.listopen,
+.listclosed {
+	padding: 2px 22px;
+	background-repeat: no-repeat;
+	background-position: 0px 1px;
+}
+table#doctorfacilitytable tr.rowopen td,
+a.listopen {
+	background-image: url('../../../Images/icon_minus.png');
+}
+table#doctorfacilitytable tr.rowclosed td,
+a.listclosed {
+	background-image: url('../../../Images/icon_plus.png');
+}
+
+a#targetcare, a#targetrx, a#targetpast, a#targetsaved {
+	cursor: pointer;
+}
+span.subtitle {
+	text-transform: none;
+	line-height: 1.2em;
+}
+
+/* for the prescriptions letter-based navigation */
+div#lettera, div#letterb, div#letterc, div#letterd, div#lettere, div#letterf, div#letterg, div#letterh, div#letteri, div#letterj, div#letterk, div#letterl, div#letterm, div#lettern, div#lettero, div#letterp, div#letterq, div#letterr, div#letters, div#lettert, div#letteru, div#letterv, div#letterw, div#letterx, div#lettery, div#letterz {
+	margin-top: 15px;
+	margin-bottom: 20px;
+	padding-top: 10px;
+	border-top: 1px #d8d8d8 dotted;
+	display: none;
+}
+.letternav {
+	cursor: pointer;
+	font-weight: bold;
+}
+.lbdisabled 
+{
+    cursor: default;
+    color: Gray;
+}
+td.addldrug {
+	text-align: left;
+	padding-left: 50px;
+}
+
+.star_full, .star_half, .star_none {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	text-indent: 1000px;
+	background-repeat: no-repeat;
+	background-image: url('../../../Images/stars.png');
+}
+.star_full {
+	background-position: -48px 0;
+}
+.star_half {
+	background-position: -96px 0;
+}
+.star_none {
+	background-position: 0 0;
+}
+p.ratings {
+	margin-top: 5px;
+	margin-bottom: 0;
+	font-size: 12px;
+	line-height: 1em;
+	color: #999;
+}
+
+p.switch,
+p.step1,
+p.step2 {
+	background-image: url('../../../Images/switch.gif');
+	background-repeat: no-repeat;
+	background-position: 3px 5px;
+	padding-left: 120px;
+}
+p.step1 {
+	background-image: url('../../../Images/arrow_step1.png');
+}
+p.step2 {
+	background-image: url('../../../Images/arrow_step2.png');
+}
+div.rxinfo {
+	float: right;
+	padding: 0 15px 15px;
+	background-color: #f0eaf4;
+	width: 300px;
+	margin-left: 25px;
+}
+h5 {
+	text-transform: none;
+	font-size: 12px;
+	color: #693;
+	padding: 0;
+	margin: 0;
+}
+div#therasub2 {
+	display: none;
+}
+
+/* --- END INTERNAL --- */
+
+
+/*  --- FORM STYLES ---  */
+a.submitlink {
+	font-weight:bold;
+	font-size: 14px;
+	line-height: 29px;
+	padding: 2px 2px 2px 26px;
+	background-image: url('../../Images/lg_arrow_square.png');/* Changed by BlueNote */
+	background-repeat: no-repeat;
+	background-position: 3px 1px;
+	cursor: pointer;
+}
+input.boxed, textarea.boxed {
+	border: 1px solid #ccc;
+	color: #333;
+	font-family: arial, helvetica, sans-serif;
+	width: 300px;
+	padding: 3px;
+}
+input.send {
+	border: 1px solid #662D91;
+	background-color: #662D91;
+	color: #fff;
+	width: 100px;
+}
+textarea.boxed {
+	height: 105px;
+}
+td.nowrap {
+	white-space: nowrap;
+}
+.formtable td,
+div.shadowbox .formtable td {
+	font-size: 14px;
+	padding: 5px 5px;
+	vertical-align: top;
+}
+.formtable td.leftpadded {
+	padding-left: 30px;
+}
+.commentsfield {
+	height: 8em;
+}
+.addressfield {
+	height: 3em;
+}
+.reqd {
+	color: #051733;
+}
+/*  --- END FORM STYLES ---  */
+
+div#printmain {
+	margin: 40px auto;
+	width: 675px;
+}
+a.table-map {
+    cursor: pointer;
+}
+
+/* ADDED BY BLUENOTE
+workaround for know issues with GMaps and JQuery hiding
+http://stackoverflow.com/questions/2432096/trouble-with-invalid-argument-when-switching-jqueryui-based-tabs */
+div.hideview {
+    display: block;
+    position: absolute;
+    left: -10000px;
+}
+div.showview {
+    display: block;
+}
+.gMapInfoWindowClose
+{
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    z-index: 20000;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+div.gMapInfoWindowClose
+{
+    display: block;
+    overflow: visible;
+    right: -6px;
+    top: -7px;
+    background-color: White;
+}
+div.buttonview:hover
+{
+    background-color: rgb(148,108,178);
+}
+div.buttonview:hover a
+{
+    color: rgb(255,255,255);
+}
+/* END ADDED BY BLUENOTE */
+
+/* Beginning of production required */
+/* place all new stuff here */

@@ -1,0 +1,58 @@
+div[id^=slider] {
+ 	position: relative;
+ 	top: -55px;
+	margin: 0px 70px 0 58px;
+    height: 10px;
+}
+
+.medication_slider {
+    width: 320px;
+    height: 80px;
+    background: url(../Images/Avatars/Avatar17_Slider.png);
+}
+    
+.medication_slider11{
+    width: 320px;
+  	height: 80px;
+    background: url(../img/bg/outlineSlider.png);
+  }
+    
+.medication_slider12{
+    width: 320px;
+  	height: 80px;
+    background: url(../img/bg/manSlider.png);
+  }
+  
+.medication_slider13{
+    width: 320px;
+  	height: 80px;
+	background: url(../img/bg/girlSlider.png);
+  }
+
+.medication_slider_empty
+{
+    width: 320px;
+  	height: 80px;
+    background: url(../img/bg/outlineSlider.png);
+}
+
+
+div[id^=slider] .ui-slider-range
+{ 
+    background: #ff9900; 
+}
+  	
+div[id^=slider] .ui-slider-handle { 
+    background: url(../Images/icon_uiSliderHandle.png); 
+    width: 28px; 
+    height: 28px; 
+    border: none; 
+    outline: none;
+    top: -.5em; 
+}
+  
+  
+  #medication_slider2 .ui-slider-range { background: #ff9900; }
+  #medication_slider2 .ui-slider-handle { background: url(../img/icon_uiSliderHandle.png); width: 28px; height: 28px; border: none; outline: none;top: -.5em; }
+  #medication_slider3 .ui-slider-range { background: #ff9900; }
+  #medication_slider3 .ui-slider-handle { background: url(../img/icon_uiSliderHandle.png); width: 28px; height: 28px; border: none; outline: none;top: -.5em; }

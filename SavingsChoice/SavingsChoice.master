@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SavingsChoice.master.cs" Inherits="ClearCostWeb.SavingsChoice.SavingsChoice" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>ClearCost Health • Savings Choice IQ</title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.5" />
+    <link href="../Styles/savingsChoice.css" rel="Stylesheet" type="text/css" media="screen" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="bigDiv">
+            <div id="logo">
+                <img src='<%= ResolveUrl("~/Images/clearcosthealth_logo.png") %>' width="464" height="70" alt="ClearCost Health logo" />
+                <img src='<%= ResolveUrl("~/Images/sciq.png") %>' width="338" height="28" alt="Savings Choice IQ" class="sciq" />
+            </div>
+            <div id="contentTop">
+            </div>
+            <div id="contentMain">
+                <asp:ContentPlaceHolder id="body" runat="server">
+        
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="contentBottom">
+            </div>
+            <div id="footer">
+                <div style="float: left" id="demobotnav">
+                    <asp:Literal ID="ltlAboutUs" runat="server" Text ="" />
+                    <img src="../Images/nav_div.gif" alt="" width="1" height="17" border="0" />
+                    <asp:Literal ID="ltlContactUs" runat="server" Text="" />
+                    <img src="../Images/nav_div.gif" alt="" width="1" height="17" border="0" />
+                    <asp:Literal ID="ltlFAQ" runat="server" Text="" />
+                </div>
+                <a href="javascript:void(0);" class="right">Savings Tips</a>
+                <span class="copyright">
+                    © ClearCost Health. All rights reserved.
+                </span>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

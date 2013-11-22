@@ -1,0 +1,174 @@
+﻿/***************************
+ GENERAL PURPOSE ADMIN STYLES
+ (TO BE MOVED TO A SEPARATE FILE)
+****************************/
+html, body { 
+    margin: 0; 
+    padding: 0;
+    font-family: arial, sans-serif;
+}
+#logo
+{
+    padding-top:10px;
+    padding-left:10px;
+}
+#topbar{
+    height:90px;
+    width:100%;
+}
+.panel {
+    cursor:pointer;
+}
+.panel + *{
+    display:none;
+}
+
+/* overwriting jquery ui datepicker style */
+.ui-datepicker{
+   font-size:10.5px;
+}
+.ui-datepicker-header{
+    background:#662D91;
+    border-color:#E2C9F5
+}
+
+/* google visualization table*/
+/* class names are defined in admin.js */
+#table-div{
+    width:200px;
+    padding:5px 5px 5px 5px;
+}
+.gtable-header{
+    background:white;
+}
+.gtable-row td{
+    border:none;
+}
+.gtable-header td
+{
+    border:none;
+    padding: 6px 0 3px 2px;
+    border-bottom: 1px solid black;
+    font-weight:bold;
+}
+
+
+/* knockout table*/
+#table-div{
+    width:200px;
+    padding:5px 5px 5px 5px;
+}
+.table-header{
+    background:white;
+}
+.table-row td{
+    border:none;
+}
+.table-header td
+{
+    border:none;
+    padding: 6px 0 3px 2px;
+    border-bottom: 1px solid black;
+    font-weight:bold;
+}
+
+
+/******************
+ TOP BAR
+*******************/
+#topbar
+{
+    background-color: #232323;
+    border-bottom: 1px solid #151515;
+}
+.toolbar{
+    /*background-image: -webkit-gradient(linear,left bottom,left top,from(#662D91),to(#E2C9F5)); */
+    background-color: #333;
+    border-top: 1px solid #383838;
+    border-bottom: 1px solid #444;
+    height:35px;
+    color:White;
+    width:100%;
+    display:block;
+    font-size:10.5px;
+    text-align:left;
+}
+.toolbar-button
+{ 
+    height:inherit;
+    border-right: 1px solid #444;
+    display:inline-block;
+    text-align:center;
+    line-height:35px;
+    padding:0px 5px;
+}
+.toolbar-button:hover{
+    background:gray;
+}
+.toolbar-button#heading
+{
+    width:239px;
+}
+
+/************************
+ LEFT TOOLBAR 
+*************************/
+#metrics-options{
+    background:#F9F9F9;
+    width:250px;
+    height:100%;
+    position:absolute;
+}
+
+/* DROP DOWN PANEL */
+#metrics-options label{
+    display:block;
+    padding:0 0 0 25px;
+    font-size: 10.5px;
+    line-height: 15px;
+}
+#metrics-options label:hover{
+    background-color:#E7E7E7;
+    border-radius: 10px;
+    width:210px;
+}
+
+/* LEFT TOOLBAR BUTTONS */
+.query-option{
+    line-height: 30px;
+    color: #444;
+    font-size: 13px;
+    font-weight: normal;
+    text-transform: none;
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#F9F9F9),to(#F2F2F2));
+    background-image: -moz-linear-gradient(center top,#F9F9F9,#F2F2F2);
+    padding: 5px;
+}
+.query-option:hover{
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#E7E7E7),to(#E7E7E7));
+    background-image: -moz-linear-gradient(center top,#E7E7E7,#E7E7E7);
+}
+
+/**********************
+ MAIN RESULTS SECTIONS 
+***********************/
+#results-header{
+    font-weight:bold;
+    font-size:12;
+    line-height:25px;
+    padding:0 0 0 20px;
+}
+#metrics-results{
+    display:block;
+    text-align:left;
+    padding-left:250px;
+    min-height:1000px;
+}
+.content-divider{
+    height:30px;
+    background-color:whiteSmoke;
+    border-bottom: 1px solid #E5E5E5;
+    border-top: 1px solid #E5E5E5;
+    border-left: 1px solid #E5E5E5;
+    
+}

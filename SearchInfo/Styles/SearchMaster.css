@@ -1,0 +1,8 @@
+﻿#main { background-color: #fff; width: 902px; margin: 0px auto; min-height: 100%; z-index: 1; }
+#topbar { height: 70px; padding: 20px 0px 15px 0px; }
+#logo { float: left; }
+#tag { float: right; text-align: right; }
+#welcomebar { height:29px; clear: left; }
+#welcomebar:after { clear:both; }
+#welcome { float: left; padding-top: 4px; padding-left: 4px; }
+#welcome h3 { text-transform: none; display: inline; line-height: 1.6em; }

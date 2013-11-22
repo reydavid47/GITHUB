@@ -1,0 +1,14 @@
+﻿body {
+background-color: transparent;
+font-size: 12pt;
+font-family: arial, helvetica, sans-serif;
+color:#000000;
+background-color: #ffffff;
+padding: 0px;
+margin: 0px;
+}
+div#printmain {
+	margin: 0 auto;
+	width: 675px;
+}
+
